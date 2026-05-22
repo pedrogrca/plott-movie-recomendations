@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <div class="start">
+    <section class="start">
         <div class="header">
             <video id="bg-video-player" autoplay muted loop playsinline class="bg-video">
                 Seu navegador não suporta vídeos.
@@ -33,7 +33,36 @@
             </div>
         </div>
         <span class="scroll-indicator">Começar Agora</span>
-    </div>
+    </section>
+
+ <section class="recommender-section">
+        
+        <div class="left-block">
+            <h2>Quais filmes você já gosta? (Até 4)</h2>
+            
+            <div class="search-wrapper">
+                <input type="text" id="movie-search" placeholder="Digite o nome de um filme..." autocomplete="off">
+                
+                <ul id="suggestions-list" class="suggestions-dropdown"></ul>
+            </div>
+
+            <div id="selected-posters" class="posters-grid">
+                <div class="poster-placeholder">+</div>
+                <div class="poster-placeholder">+</div>
+                <div class="poster-placeholder">+</div>
+                <div class="poster-placeholder">+</div>
+            </div>
+        </div>
+
+        <div class="right-block">
+            <h2>Descreva o filme que você procura</h2>
+            
+            <textarea id="description-input" rows="8" placeholder="Ex: Quero um filme de suspense psicológico com um plot twist no final, parecido com Ilha do Medo..."></textarea>
+            
+            <button id="generate-btn">Achar meu filme</button>
+        </div>
+
+    </section>
 
 </body>
 </html>
